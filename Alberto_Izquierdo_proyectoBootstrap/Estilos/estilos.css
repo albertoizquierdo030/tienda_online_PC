@@ -1,0 +1,115 @@
+body{
+    background-image: url("../Imágenes/mono-fonfoooooooo.png");
+    background-attachment: fixed;
+    background-position: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+section{
+    background-color: #ebaa4ecc;
+}
+header{
+    background-color: #ebaa4eea;
+}
+#texto{
+    background-color: #58d2f0b9;
+}
+#vid{
+    background-color: rgba(92, 95, 94, 0.753);
+}
+
+/*estilo para darle ese movimiento a las cartas de top ventas*/
+.product_item:hover .cp_img {
+    top: -40px
+}
+
+.product_item:hover .cp_img img {
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22)
+}
+
+.product_item:hover .cp_img .hover {
+    display: block
+}
+
+.product_item .cp_img {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    -khtml-transform: translate(-50%);
+    width: 100%;
+    padding: 15px;
+    transition: all 0.4s ease-in-out
+}
+
+
+
+.product_item .cp_img .hover {
+    display: none;
+    text-align: center;
+    margin-top: 10px
+}
+
+.product_item .product_details {
+    padding-top: 110%;
+    text-align: center
+}
+
+.product_item .product_details h5 {
+    margin-bottom: 5px
+}
+
+.product_item .product_details h5 a {
+    font-size: 16px;
+    color: #444
+}
+
+.product_item .product_details h5 a:hover {
+    text-decoration: none
+}
+
+.product_item .product_details .product_price li {
+    display: inline-block;
+    padding: 0 10px
+}
+
+.product_item .product_details .product_price .new_price {
+    font-weight: 600;
+    color: #ff4136
+}
+
+.product_item_list table tr td {
+    vertical-align: middle
+}
+
+.product_item_list table tr td h5 {
+    font-size: 15px;
+    margin: 0
+}
+
+.product-order-list table tr th:last-child {
+    width: 145px
+}
+
+  
+/*Estilo para darle un poco de gracia a los botones de nuestros productos estrella*/
+.third {
+    border-color: yellow;
+    color: rgb(12, 12, 12);
+    box-shadow: 0 0 40px 40px rgb(189, 189, 13) inset, 0 0 0 0 rgb(189, 189, 13);
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;    
+}
+.third:hover {
+    box-shadow: 0 0 10px 0 rgb(189, 189, 13) inset, 0 0 10px 4px rgb(165, 165, 28);
+}
+
+ 
+  
+
+
+
+

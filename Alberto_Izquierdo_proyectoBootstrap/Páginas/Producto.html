@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+<link rel="stylesheet" href="../Estilos/estiloProducto.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+<link rel="shortcut icon" href="../Imágenes/mono_icono1-min.png"/>
+<title>PcGamers</title>
+</head>
+<body>
+
+  <!--menu responsive-->
+  <header class="header" id="menu">
+    <div class="container px-0 px-lg-3">
+      <nav class="navbar navbar-expand-lg navbar-light py-3 px-lg-0"><img src="../Imágenes/monoDefinitivo-min.png" alt="logo_web"  class="img-fluid" style="height: 200px;">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark font-weight-bold" href="../Páginas/index.html">INICIO</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark font-weight-bold" href="../Páginas/Oferta.html">OFERTAS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark font-weight-bold" href="../Páginas/Producto.html">PRODUCTO</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark font-weight-bold" href="../Páginas/Quiénes somos.html">QUIÉNES SOMOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark font-weight-bold" href="../Páginas/Contacto.html">CONTACTO</a>
+              </li>
+          </ul>
+          <ul class="navbar-nav ml-auto">               
+            <li class="nav-item"><a class="nav-link text-dark font-weight-bold" href="../Páginas/Contacto.html">Carrito <i class="fas fa-dolly-flatbed mr-1 text-gray"></i><small class="text-gray"></small></a></li>
+
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle text-dark font-weight-bold" id="Dropdown" href="../Páginas/Contacto.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Entrar <i class="fas fa-user-alt mr-1 text-gray"></i></a>
+
+              <div class="dropdown-menu mt-3" aria-labelledby="pagesDropdown"><a class="dropdown-item border-0 transition-link" href="../Páginas/Contacto.html">-Iniciar sesión</a><a class="dropdown-item border-0 transition-link" href="#">-Registrarse</a></div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <aside class="container">
+    <section class="row justify-content-center my-5" id="categorias">
+      <h2>PRODUCTO</h2>
+   </section>
+</aside>
+     
+<!--sección que simula la sección que apareceria al clicar cualquier producto, siempre sale el mismo sino necesitaría mil páginas-->
+     <aside class="container">
+     <div class="row mb-5">
+        <div class="col-lg-6 col-md-6 col-12">
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                <img src="../Imágenes/producUno.jpg" data-src="holder.js/900x400?theme=social" alt="900x400" data-holder-rendered="true">
+              </div>
+              <div class="carousel-item">
+                <img src="../Imágenes/producDos.jpg" data-src="holder.js/900x400?theme=industrial" alt="500x400" data-holder-rendered="true">
+              </div>
+              <div class="carousel-item">
+                <img src="../Imágenes/producTres.jpg" data-src="holder.js/900x400?theme=industrial" alt="900x400" data-holder-rendered="true">
+              </div>   
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+        </div>
+       </div>
+       <div class="col-lg-6 col-md-6 col-12 p-4" id="produc">
+         <h3><strong>ORDENADOR PcGAMERS NEGRO RGB INTEL CORE I7</strong></h3>
+         <h1 class="text-danger"><strong>899.99€</strong></h1>
+         <p>Cantidad:
+           <div class="mt-4">
+         <button type="button" class="btn btn-warning btn-sm">-</button>
+          <strong>1</strong>
+         <button type="button" class="btn btn-warning btn-sm">+</button>
+        </div>
+        </p>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            ¿Necesitas ayuda?
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Contactar con el vendedor</a>
+            <a class="dropdown-item" href="#">Financiación</a>
+          </div>
+        </div>
+       </div>
+     </div>
+     <div class="row">
+       <img src="../Imágenes/producUno.jpg" class="col-lg-2 col-md-4 col-4 border" style="border-color: #1d1d1d !important">
+       <img src="../Imágenes/producDos.jpg" class="col-lg-2 col-md-4 col-4  border" style="border-color: #1d1d1d !important">
+       <img src="../Imágenes/producTres.jpg" class="col-lg-2 col-md-4 col-4 border" style="border-color: #1d1d1d !important">
+
+       <button class="btn third mt-4 ml-lg-5 p-2 col-lg-2 col-md-6"><strong>COMPRAR</strong></button>
+        <button class="btn third mt-4 ml-lg-5 p-2 col-lg-2 col-md-6"><strong>AÑADIR AL CARRITO</strong></button>
+
+     </div>
+  </aside>
+
+
+  <!--apartado collapse-->
+  <article class="container mt-4">
+  <ul class="nav nav-tabs border-0" id="myTab" role="tablist">
+    <li class="nav-item"><a class="nav-link active" id="description-tab" data-toggle="tab" href="#description" role="tab" aria-controls="description" aria-selected="true">Descripción</a></li>
+    <li class="nav-item"><a class="nav-link" id="reviews-tab" data-toggle="tab" href="#reviews" role="tab" aria-controls="reviews" aria-selected="false">Opiniones</a></li>
+  </ul>
+  <div class="tab-content mb-5" id="myTabContent">
+    <div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="description-tab">
+      <div class="p-4 p-lg-5 bg-white">
+        <h6 class="text-uppercase"><u>Descripción del producto </u></h6>
+        <p class="text-muted text-small mb-0">Entra en la nueva generación de procesadores AMD Ryzen 5 con el nuevo PCCOM Silver. Su procesador AMD Ryzen 5 2600 de seis núcleos, 16 GB de RAM DDR4 y su potente tarjeta gráfica GTX 1650 te ofrecerán toda la potencia necesaria para disfrutar de los últimos juegos del mercado con una tasa de frames superior a 60fps y a resolución 1080p.
+          
+        </p>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
+      <div class="p-4 p-lg-5 bg-white">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="media mb-3"><img class="rounded-circle" src="../Imágenes/imagen_correo-min.png" alt="" width="50">
+              <div class="media-body ml-3">
+                <h6 class="mb-0 text-uppercase">Alberto Izquierdo</h6>
+                <p class="small text-muted mb-0 text-uppercase">04 Marzo 2021</p>
+                <ul class="list-inline mb-1 text-xs">
+                  <li class="list-inline-item m-0"><i class="fas fa-star text-warning"></i></li>
+                  <li class="list-inline-item m-0"><i class="fas fa-star text-warning"></i></li>
+                  <li class="list-inline-item m-0"><i class="fas fa-star text-warning"></i></li>
+                  <li class="list-inline-item m-0"><i class="fas fa-star text-warning"></i></li>
+                  <li class="list-inline-item m-0"><i class="fas fa-star-half-alt text-warning"></i></li>
+                  <li class="list-inline-item m-0"><img src="../Iconos/comprobado (1).png"></i></li>
+                  <li class="list-inline-item m-0 font-italic">Compra verificada</i></li>
+                </ul>
+                <p class="text-small mb-0 text-muted">"Lo compré hace una semana, lo he probado y funciona perfectamente, es una bestia y llegó en dos días."</p>
+              </div>
+            </div>
+            <div class="media"><img class="rounded-circle" src="../Imágenes/imagenCorreo.png" alt="" width="50">
+              <div class="media-body ml-3">
+                <h6 class="mb-0 text-uppercase">Javier López</h6>
+                <p class="small text-muted mb-0 text-uppercase">14 Mayo 2021</p>
+                <ul class="list-inline mb-1 text-xs">
+                  <li class="list-inline-item m-0"><i class="fas fa-star text-warning"></i></li>
+                  <li class="list-inline-item m-0"><i class="fas fa-star text-warning"></i></li>
+                  <li class="list-inline-item m-0"><i class="fas fa-star text-warning"></i></li>
+                  <li class="list-inline-item m-0"><i class="fas fa-star text-warning"></i></li>
+                  <li class="list-inline-item m-0"><img src="../Iconos/comprobado (1).png"></i></li>
+                  <li class="list-inline-item m-0 font-italic">Compra verificada</i></li>
+                </ul>
+                <p class="text-small mb-0 text-muted">"Para mi este pc es muy bueno en calidad precio, y a mi en el tiempo que lo he tenido me va de maravilla."</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+
+  <aside class="container">
+    <section class="row justify-content-center mt-5" id="categorias">
+      <h2>YA HAS VISTO ANTES</h2>
+   </section>
+</aside>
+
+<!--apartado que simularía una página real donde al visitar un producto muestra productos visitados anteriormente, tiene un efectillo de css para no quedar muy soso-->
+ <div class="container">
+  <div class="row clearfix mt-5 mb-5">
+      
+     
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="m-4">
+          <div class="card">
+          <a href="../Páginas/Producto.html"><div class="card-image">
+              <img class="card-img-top mt-3" src="../Imágenes/silla.jpg" alt="Card image cap">
+              <div class="image-overlay"></div></a>
+          </div>         
+          <div class="card-body">
+              <h5 class="card-title text-center">189.99€</h5>
+              <p class="card-text">Onaji Akuma Pro RGB Two Silla Gaming RGB</p>
+          </div>
+          </div>
+          </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="m-4">
+          <div class="card">
+            <a href="../Páginas/Producto.html"><div class="card-image">
+              <img class="card-img-top mt-3" src="../Imágenes/cascos.jpg" alt="Card image cap">
+              <div class="image-overlay"></div></a>
+          </div>         
+          <div class="card-body">
+              <h5 class="card-title text-center">56.90€</h5>
+              <p class="card-text text-center">Astro Gaming Auriculares Inalámbricos</p>
+          </div>
+          </div>
+          </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="m-4">
+          <div class="card">
+            <a href="../Páginas/Producto.html"><div class="card-image">
+              <img class="card-img-top mt-3" src="../Imágenes/teclado.jpg" alt="Card image cap">
+              <div class="image-overlay"></div></a>
+          </div>         
+          <div class="card-body">
+              <h5 class="card-title text-center">15.90€</h5>
+              <p class="card-text">Mars Gaming MCPTKL Combo Gaming Teclado</p>
+          </div>
+          </div>
+          </div>
+      </div> 
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="m-4">
+          <div class="card">
+            <a href="../Páginas/Producto.html"><div class="card-image">
+              <img class="card-img-top mt-3" src="../Imágenes/cpu.jpg" alt="Card image cap">
+              <div class="image-overlay"></div></a>
+          </div>         
+          <div class="card-body">
+              <h5 class="card-title text-center">350.90€</h5>
+              <p class="card-text">Intel Core i9-10900F 2.8 GHz Novena Generación</p>
+          </div>
+          </div>
+          </div>
+      </div>
+    </div>
+    </div>
+
+
+<!--footer-->
+    <footer class="bg-dark text-white">
+      <div class="container py-4 mt-5">
+        <div class="row py-5">
+          <div class="col-md-4 mb-3 mb-md-0">
+            <img src="../Imágenes/mono_icono1-min.png" class="img-fluid" style="height: 190px;">
+          </div>
+          <div class="col-md-4 mb-3 mb-md-0">
+            <h6 class="mb-3">LEGAL</h6>
+            <ul class="list-unstyled mb-0">
+              <li><a class="footer-link text-warning" href="#">Política de privacidad</a></li>
+              <li><a class="footer-link text-warning" href="#">Política de cookies</a></li>
+              <li><a class="footer-link text-warning" href="#">Avido legal</a></li>
+              <li><a class="footer-link text-warning" href="#">Responsabilidad</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h6 class="mb-3">REDES SOCIALES</h6>
+            <ul class="list-unstyled mb-0">
+              <li><a class="text-warning" href="https://es-es.facebook.com/"><img src="../Iconos/facebook (2)-min.png"> Facebook</a></li>
+              <li><a class="text-warning"  href="https://www.gmail.com/mail/help/intl/es/about.html?iframe"><img src="../Iconos/gmail (1)-min.png"> Gmail</a></li>
+              <li><a class="text-warning" href="https://twitter.com/?lang=es"><img src="../Iconos/gorjeo-min.png"> Twitter</a></li>
+              <li><a class="text-warning"  href="https://www.instagram.com/"><img src="../Iconos/instagram (4)-min.png"> Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="border-top pt-4" style="border-color: #1d1d1d !important">
+          <div class="row">
+            <div class="col-lg-6">
+              <p class="small text-muted mb-0">PcGamers©2021</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <!--botones en posición fija en la esquina inferior derecha de la página-->
+    <a href="#menu"><button type="submit" class="btn btn-outline-warning fixed-bottom ml-auto mr-5 mb-2"><i class="bi bi-arrow-up-circle"></i></button></a>
+<button type="button" class="btn btn-outline-warning fixed-bottom ml-auto mr-5 mb-5" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap"><i class="bi bi-question-circle"></i></button>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">¿Necesitas ayuda?</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Introduce tu correo:</label>
+            <input type="email" class="form-control" id="recipient-name" placeholder="Correo electrónico" required>
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Mensaje:</label>
+            <textarea class="form-control" id="message-text" placeholder="Cuéntanos tu problema y te responderemos lo antes posible." required></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-warning">Enviar</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+</html>

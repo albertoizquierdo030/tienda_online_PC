@@ -1,0 +1,50 @@
+body{
+    background-image: url("../Imágenes/mono-fonfoooooooo.png");
+    background-attachment: fixed;
+    background-position: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+section{
+    background-color: #ebaa4ecc;
+}
+#produc{
+    background-color: rgba(255, 255, 255, 0.795);
+}
+header{
+    background-color: #ebaa4eea;
+}
+
+/*Estilo para los botones de comprar y añadir al carrito*/
+
+.third {
+    border-color: #bd7817cc;
+    color: rgb(12, 12, 12);
+    box-shadow: 0 0 60px 40px #ebaa4ecc inset, 0 0 0 0 rgb(189, 189, 13);
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;    
+}
+.third:hover {
+    box-shadow: 0 0 10px 0 rgb(189, 189, 13) inset, 0 0 10px 4px rgb(165, 165, 28);
+}
+.card-image {
+    position: relative;
+}
+
+/*Estilo para las cartas de la sección "Ya has visto antes"*/   
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background: rgba(0, 0, 0, 0.5);
+}
+    
+.card:hover .image-overlay {
+    opacity: 1;
+}
